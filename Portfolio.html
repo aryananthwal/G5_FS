@@ -2,59 +2,79 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- For Integrating css file together -->
-    <link rel="StyleSheet"href="style.css">
+    <title>Aryan Anthwal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Aryan Anthwal</h1>
-    <h2>Aryan Anthwal</h2>
-    <P>I am a Full Stack Web Developer.</P>
-    <h2>Skills</h2>
+    <!-- Sticky Header -->
+    <div class="sticky-header">
+        <h1 class="main-heading"><a href="#">Aryan Anthwal</a></h1>
+        <nav class="nav-links">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </div>
 
-    <!-- Unordered List (in Bullet Points) -->
-    <ul>  
-        <li>Java</li>
-        <li>Python</li>
-        <li>SQL</li>
-    </ul>
+    <!-- About Section -->
+    <div class="intro-section" id="about">
+        <h2 class="sub-heading">Full Stack Web Developer</h2>
+        <p class="intro">I am a Full Stack Web Developer learning HTML, CSS, and programming languages.</p>
+    </div>
 
-    <!-- Ordered List (in Numbering 1,2,3,) -->
-    <!-- <ol>
-        <li>Java</li>
-        <li>Python</li>
-        <li>SQL</li>
-    </ol> -->
+    <!-- Skills Section -->
+    <div class="box" id="skills">
+        <h2 class="section-heading">Skills</h2>
+        <ul class="skills-list">
+            <li>Java</li>
+            <li>Python</li>
+            <li>SQL</li>
+            <li>Oracle</li>
+        </ul>
+    </div>
 
-    <h2>Education</h2>
-    <table border="1">
-        <tr>
-            <th>Degree</th>
-            <th>Institute</th>
-            <th>Year</th>
-        </tr>
-        <tr>
-            <td>BE-CSE</td>
-            <td>Chandigarh University</td>
-            <td>2027</td>
-        </tr>
-        <tr>
-            <td>12 th</td>
-            <td>St. Peter's</td>
-            <td>2023</td>
-        </tr>
-    </table>
+    <!-- Education Section -->
+    <div class="box" id="education">
+        <h2 class="section-heading">Education</h2>
+        <table class="education-table">
+            <tr>
+                <th>Degree</th>
+                <th>Institute</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>BE-CSE</td>
+                <td>Chandigarh University</td>
+                <td>2027</td>
+            </tr>
+            <tr>
+                <td>12th</td>
+                <td>St. Peter's Senior Secondary School</td>
+                <td>2023</td>
+            </tr>
+        </table>
+    </div>
 
-    <h2>Contact Me</h2>
-    <form>
-        <label for  = "name">Name: </label>
-        <br>
-        <input type = "text" id = "name" placeholder = "Enter name">
-        <br>
-        <label for = "email">Email: </label>
-        <br>
-        <input type = "text" id = "email" placeholder = "Enter email">
-    </form>
+    <!-- Contact Section -->
+    <div class="contact-container" id="contact">
+        <h2 class="section-heading">Contact Me</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" placeholder="Enter your name"><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="text" id="email" placeholder="Enter your email"><br><br>
+
+            <label for="message">Message:</label><br>
+            <textarea id="message" rows="5" placeholder="Enter your message"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+            <div class="absolute-note">*Your info is safe with us!</div>
+        </form>
+    </div>
+
+    <!-- Fixed Button -->
+    <button class="fixed-button">Contact</button>
 </body>
 </html>

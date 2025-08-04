@@ -1,6 +1,140 @@
-h1{
-    color: red;
+/* Whole Page */
+body {
+    background-color: aliceblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
-table{
-    border: 1;
+
+/* Sticky Header */
+.sticky-header {
+    background-color: navy;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;
+    z-index: 10;
+    text-align: center;
+}
+
+.main-heading {
+    margin: 0;
+}
+
+.main-heading a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Navigation Links */
+.nav-links {
+    margin-top: 10px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+/* Subheading & Intro */
+.sub-heading {
+    color: navy;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro {
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+/* Box around sections */
+.box {
+    background-color: lightcyan;
+    border: 2px solid navy;
+    padding: 20px;
+    margin: 30px auto;
+    width: 80%;
+    box-sizing: border-box;
+}
+
+/* Section Headings */
+.section-heading {
+    color: darkblue;
+    margin-bottom: 10px;
+}
+
+/* Skills List */
+.skills-list {
+    padding-left: 20px;
+}
+
+/* Education Table */
+.education-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.education-table th,
+.education-table td {
+    border: 2px solid navy;
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-align: center;
+}
+
+/* Contact Form */
+.contact-container {
+    position: relative;
+    margin: 30px auto;
+    width: 80%;
+}
+
+.contact-form {
+    background-color: lightyellow;
+    padding: 20px;
+    border: 2px solid navy;
+}
+
+input[type="text"],
+textarea {
+    width: 90%;
+    padding: 8px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+/* Absolute Positioned Note */
+.absolute-note {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: green;
+    font-size: 12px;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: navy;
+    color: white;
+    padding: 8px 16px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Fixed Contact Button */
+.fixed-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: navy;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
 }
