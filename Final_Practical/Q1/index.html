@@ -1,0 +1,52 @@
+<!-- Q1 - Create a React functional component named CounterApp that displays a number and an 
+Increment button. When the user clicks the button, the count should increment by 
+1 each time.
+
+Q3 - In a small app with App -> Header -> Icon -> User Profile
+pass the username from App to UserProfile without using Context API. 
+Demonstrate how prop drilling occurs. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 20px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Counter App</h1>
+    <h2 id="count">0</h2>
+
+    <button onclick="increment()">Increment</button>
+
+    <script>
+        let count = 0;
+
+        function increment() {
+            count++;
+            document.getElementById("count").innerText = count;
+        }
+    </script>
+
+</body>
+</html>
